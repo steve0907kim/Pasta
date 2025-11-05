@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고객 후기 - PASTA PERFETTO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 커스텀 스타일 및 폰트 설정 (index.html에서 가져옴) */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fcf8f5; /* 아주 밝은 베이지색 배경 */
+            color: #333;
+        }
+
+        /* 개별 후기 카드 스타일 */
+        .comment-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .comment-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(245, 158, 11, 0.2);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-red-700 text-white py-6 shadow-xl">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold tracking-wider sm:text-5xl">PASTA PERFETTO</h1>
+            <p class="mt-2 text-xl font-light">신선함, 그 이상의 맛을 경험하세요</p>
+            <nav class="mt-4 space-x-6">
+                <a href="index.html" class="text-lg font-semibold text-white hover:text-amber-300 transition duration-300">
+                    홈으로
+                </a>
+                <span class="text-lg font-semibold text-amber-300">
+                    고객 후기
+                </span>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+
+        <section class="max-w-4xl mx-auto mb-16">
+            <h2 class="text-4xl font-extrabold text-center mb-12 text-red-600 border-b-4 border-amber-500 pb-4">
+                ⭐ 생생한 고객 후기 (4.9/5.0) ⭐
+            </h2>
+            
+            <div class="space-y-8">
+                
+                <div class="comment-card bg-white p-8 rounded-xl shadow-lg border-l-4 border-amber-500">
+                    <div class="flex items-center mb-4">
+                        <span class="text-2xl text-amber-500 mr-3">★★★★★</span>
+                        <p class="text-lg font-bold text-gray-800">김**현</p>
+                    </div>
+                    <p class="text-xl font-semibold mb-3 text-red-700">"집에서 미슐랭 파스타를 즐기다니!"</p>
+                    <p class="text-gray-600 leading-relaxed">
+                        퇴근 후 지쳐서 요리하기 힘들었는데, 5분 만에 이렇게 깊고 신선한 맛의 파스타를 먹을 수 있다니 놀랍습니다. 특히 토마토 소스의 풍미가 일품입니다. 재구매 의사 100%입니다!
+                    </p>
+                    <p class="text-sm text-gray-400 mt-4 text-right">2025.10.29</p>
+                </div>
+
+                <div class="comment-card bg-white p-8 rounded-xl shadow-lg border-l-4 border-amber-500">
+                    <div class="flex items-center mb-4">
+                        <span class="text-2xl text-amber-500 mr-3">★★★★☆</span>
+                        <p class="text-lg font-bold text-gray-800">이*진</p>
+                    </div>
+                    <p class="text-xl font-semibold mb-3 text-red-700">"간편함과 맛의 조화!"</p>
+                    <p class="text-gray-600 leading-relaxed">
+                        정말 빠르게 조리되면서도 레스토랑에서 먹는 듯한 정통의 맛이 납니다. 다만, 조금 더 다양한 매운맛 옵션이 있다면 좋을 것 같아요. 다음 신제품을 기대합니다!
+                    </p>
+                    <p class="text-sm text-gray-400 mt-4 text-right">2025.11.01</p>
+                </div>
+
+                <div class="comment-card bg-white p-8 rounded-xl shadow-lg border-l-4 border-amber-500">
+                    <div class="flex items-center mb-4">
+                        <span class="text-2xl text-amber-500 mr-3">★★★★★</span>
+                        <p class="text-lg font-bold text-gray-800">박*수</p>
+                    </div>
+                    <p class="text-xl font-semibold mb-3 text-red-700">"신선한 재료의 힘이 느껴집니다."</p>
+                    <p class="text-gray-600 leading-relaxed">
+                        재료가 신선하다는 광고 문구가 거짓이 아니었습니다. 인공적인 맛이 전혀 없고, 마치 셰프가 직접 만들어준 것 같아요. 바쁜 워킹맘에게 최고의 선택입니다!
+                    </p>
+                    <p class="text-sm text-gray-400 mt-4 text-right">2025.11.04</p>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block px-8 py-3 bg-red-600 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-red-700 transition duration-300">
+                    나만의 후기 작성하기
+                </a>
+            </div>
+            
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6 mt-12">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <p>&copy; 2025 Pasta Perfetto. All Rights Reserved. | Made in Italy</p>
+            <div class="mt-2 space-x-4">
+                <a href="#" class="hover:text-amber-500">개인정보처리방침</a>
+                <a href="#" class="hover:text-amber-500">이용약관</a>
+                <a href="#" class="hover:text-amber-500">고객센터</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
